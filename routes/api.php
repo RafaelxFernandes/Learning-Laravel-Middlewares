@@ -18,3 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('/nome', 'NomeController@storeNome');
+
+Route::get('/teste', function(){
+	return 'teste';
+});
